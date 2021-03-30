@@ -1,0 +1,1270 @@
+@import "reset";
+
+/* variables */
+$shadow: 0px 1px 5px -2px rgba(15, 0, 0, 0.979);
+$boxhovershadow: 0px 1px 5px rgb(31, 30, 30);
+$footershadow: 0px 1px 5px rgba(31, 30, 30, 0.966);
+$tophovershadow: 0px 1px 5px rgb(207, 207, 207);
+$font: 'Mukta', sans-serif;
+$usedfont: 'Robota-NonCommercial', 'san-serif';
+
+html{
+    background: radial-gradient(circle, rgba(230,230,230,1) 0%, rgba(182,182,182,1) 100%);
+    //background: radial-gradient(circle, #ffffff 0%, #c7c7c7 100%);
+    //background-color: #923cb5;
+    //background-image: radial-gradient(#1a1a1a 40%, #000000 100%);
+    //background-image:linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(26,26,26,1) 10%, rgba(26,26,26,1) 12%, rgba(0,0,0,1) 30%, rgba(4,4,4,1) 70%, rgba(26,26,26,1) 88%, rgba(26,26,26,1) 90%, rgba(0,0,0,1) 100%);
+}
+
+body{
+    overflow-y: scroll;
+    font-family: $font;
+}
+
+nav ul{
+    height: 100px;
+    //max-height:100px;
+    margin: 0;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    //object-fit: contain;
+
+    li{
+        height:100px;
+        list-style-type: none;
+
+        a{  
+            padding-bottom: 35px;
+            padding-top: 35px;
+            height:100px;
+            //background-color: rgb(14, 14, 14);
+            //background-image: linear-gradient(0deg, #0000007c 30%,#111111bb 90%);
+            text-decoration: none;
+            text-align: center;
+            display: inline-block;
+            width: 100%;
+            //padding: 0.5em;
+            //padding-top: 0.7em;
+            //box-shadow: $shadow;
+            color:#303030;
+            
+        }
+
+        a:hover{
+            height:100px;
+            box-shadow: none;
+            //background-color: rgb(14, 14, 14);
+            //background-image: linear-gradient(0deg, #0000007c 30%,#11111175 90%);
+            color: Black;
+            box-shadow: none;
+            //box-shadow: $footershadow;
+            transition: transform 0.1s ease-in-out;
+            transform: scale(1.4);
+            //opacity: 1;
+        }       
+    }
+
+    li a.active {
+        height: 110%;
+        //box-shadow: $shadow;
+        //border-radius: 0px 0px 15px 15px;
+        //background-color: #2e2d2e;
+        //background-image: linear-gradient(0deg, #ffffff 30%,#ececec 90%);
+        color: Black;
+        font-size: 20px;
+        font-weight: bold;
+        padding-top: 30px;
+      }
+    
+}
+
+iframe{
+    border: none;
+    //height: 400px;
+    /* width */
+    //: scroll;
+    //display: none;
+}
+
+.landingpagegif{
+    max-width: 500px;
+}
+
+
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 600px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
+
+
+
+.logowoosh{
+    height: 40px;
+    width: auto;
+    position: center;
+}
+
+.homepage{
+    background: url(/img/logo/logo.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    
+}
+.homepage:hover{
+    transform: none;
+    
+}
+
+.usedfont{
+    font-family: $usedfont;
+}
+
+.memberspadding{
+    max-height:400px;
+    //overflow-y: hidden;
+    overflow-x: hidden;
+    //padding-top: 22%;
+    padding-bottom: 20%;
+    direction:rtl;
+}
+
+
+.memberspaddingshadow{
+    max-height:500px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    padding-top: 22%;
+    padding-bottom: 20%;
+    direction:rtl;
+}
+
+
+.contain{
+    height:100%;
+    max-width: 1400px;
+    //margin: auto;
+    //padding-left: 10%;
+
+}
+
+.containfooter{
+    max-height: 70px;
+    max-width: 1280px;
+    margin: auto;
+}
+
+
+.head {
+    //font-family: $usedfont;
+    height:100px;
+    margin: 0 auto;
+    width: 100%;
+    background-color: #cbcbcb;
+    z-index: 20;
+    -webkit-box-shadow: 0px 6px 11px -1px rgba(0,0,0,0.53);
+    -moz-box-shadow: 0px 6px 11px -1px rgba(0,0,0,0.53);
+    box-shadow: 0px 6px 11px -1px rgba(0,0,0,0.53);
+}
+.banner {
+    //padding-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 100%;
+    height: 350px;
+    //background: linear-gradient( to left, rgba(255, 255, 255, 0) 0%,#030303 20%,#030303 80%, rgba(255, 255, 255, 0) 100%);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(135,135,135,1) 8%, rgba(79,79,79,1) 13%, rgba(43,43,43,1) 17%, rgba(7,7,7,1) 22%, rgba(7,7,7,0) 23%);
+    background-size: cover;
+
+}
+.logo{
+    background: url(https://raw.githubusercontent.com/Zavvitar/Lux.github.io/master/img/logo/Comp2.gif) no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+.linebreak {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 100%;
+    height: 70px;
+    //background: linear-gradient( to left, rgba(255, 255, 255, 0) 0%,#030303 20%,#030303 80%, rgba(255, 255, 255, 0) 100%);
+}
+.linebreakimage{
+    background: url(/img/Raid/line.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.titletitle{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 100%;
+    height: 100px;
+    //background: linear-gradient( to left, rgba(255, 255, 255, 0) 0%,#030303 20%,#030303 80%, rgba(255, 255, 255, 0) 100%);
+}
+.titletitletitle{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 100%;
+    height: 100%;
+    //background: linear-gradient( to left, rgba(255, 255, 255, 0) 0%,#030303 20%,#030303 80%, rgba(255, 255, 255, 0) 100%);
+}
+.titletitleimage{
+    background: url(https://raw.githubusercontent.com/Zavvitar/Lux.github.io/master/img/logo/writing.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding-bottom: 2px;
+}
+
+.player{
+    max-width: 1280px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+     
+}
+
+.boxthings11{
+    //position: relative;
+    //z-index: 100;
+    padding-top: 1%;
+    //padding-bottom: 5px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin: 0 auto;
+    max-width: 1400px;
+    max-height: 1000px;
+    width: 100%;
+    height: 100%;
+    //grid-gap: 5px;
+    //background: linear-gradient( to left, rgba(255, 255, 255, 0) 0%,#030303 20%,#030303 80%, rgba(255, 255, 255, 0) 100%);
+}
+
+
+
+
+
+
+.boxthings10{
+    
+    box-shadow: 12px 0px 5px -4px rgba(0, 0, 0, 0.164), -12px 0 5px -4px rgba(0,0,0,0.164);
+    //box-shadow: 6px 0 10px -4px rgba(0,0,0,0.53), -6px 0 10px -4px rgba(0,0,0,0.53);
+    position: relative;
+    //z-index: -100;
+    //padding-top: 20px;
+    //padding-bottom: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 0 auto;
+    max-width: 1280px;
+    max-height: 1000px;
+    width: 100%;
+    height: 100%;
+    //grid-gap: 5px;
+    background-color:#dadada;
+}
+
+
+.boxthings{
+    box-shadow: 12px 0px 5px -4px rgba(0, 0, 0, 0.164), -12px 0 5px -4px rgba(0,0,0,0.164);
+    //box-shadow: 6px 0 10px -4px rgba(0,0,0,0.53), -6px 0 10px -4px rgba(0,0,0,0.53);
+    position: relative;
+    //z-index: -100;
+    //padding-top: 20px;
+    //padding-bottom: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 0 auto;
+    max-width: 1400px;
+    max-height: 1000px;
+    width: 100%;
+    height: 100%;
+    //grid-gap: 5px;
+    //background: linear-gradient( to left, rgba(255, 255, 255, 0) 0%,#030303 20%,#030303 80%, rgba(255, 255, 255, 0) 100%);
+}
+
+.boxthings > div{
+    text-align: center;
+    
+    &:nth-child(1) {
+        background-color: #dadada;
+      }   
+
+    &:nth-child(2) {
+        background-color: #dadada;
+        color: white;
+      }  
+}
+
+.boxthings8{
+    box-shadow: inset 0 11px 11px -7px rgba(0, 0, 0, 0.55);
+    height: 500px;
+    max-height:500px;
+    //box-shadow: 6px 0 10px -4px rgba(0,0,0,0.53), -6px 0 10px -4px rgba(0,0,0,0.53);
+   // box-shadow: 0 9px 0px 0px rgb(203, 203, 203), 0 -9px 0px 0px rgb(203, 203, 203), 12px 0 15px -4px rgba(0,0,0,0.53), -12px 0 15px -4px rgba(0,0,0,0.53);
+//    box-shadow: $shadow;
+    vertical-align: middle;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.boxthings9{
+    max-height:500px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    color:black;
+}
+
+
+
+.boxthings7{
+    background-color: #dadada;
+    //padding-top: 5px;
+    //padding-bottom: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    //grid-template-rows: 1fr 1fr;
+    //grid-gap: 5px;
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 100%;
+    height: 100%;
+
+    //background: linear-gradient( to left, rgba(255, 255, 255, 0) 0%,#030303 20%,#030303 80%, rgba(255, 255, 255, 0) 100%);
+}
+
+
+
+
+
+
+.boxthings6{
+    background-color: #dadada;
+    box-shadow: 12px 0px 5px -4px rgba(0, 0, 0, 0.164), -12px 0 5px -4px rgba(0,0,0,0.164);
+    //box-shadow: 6px 0 10px -4px rgba(0,0,0,0.53), -6px 0 10px -4px rgba(0,0,0,0.53);
+    position: relative;
+   // z-index: -100;
+    //padding-top: 20px;
+    //padding-bottom: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 0 auto;
+    max-width: 1280px;
+    max-height: auto;
+    width: 100%;
+    height: 100%;
+    //grid-gap: 5px;
+    //background: linear-gradient( to left, rgba(255, 255, 255, 0) 0%,#030303 20%,#030303 80%, rgba(255, 255, 255, 0) 100%);
+}
+
+
+
+
+
+.boxthings5{
+    //padding-top: 5px;
+    padding-bottom: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    //grid-template-rows: 1fr 1fr;
+    grid-gap: 5px;
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 100%;
+    height: 100%;
+    //background: linear-gradient( to left, rgba(255, 255, 255, 0) 0%,#030303 20%,#030303 80%, rgba(255, 255, 255, 0) 100%);
+}
+
+.boxthings5 > div{
+    text-align: center;
+    
+    &:nth-child(1) {
+        background: url(https://raw.githubusercontent.com/Zavvitar/Lux.github.io/master/img/metas/dsc.jpg) no-repeat;
+        background-size: 100%;
+        height: 850px;
+      }   
+
+    &:nth-child(2) {
+        background: url(https://raw.githubusercontent.com/Zavvitar/Lux.github.io/master/img/metas/gos.jpg) no-repeat;
+        background-size: 100%;
+        height: 850px;
+      }
+    
+     &:nth-child(3) {
+        background: url(https://raw.githubusercontent.com/Zavvitar/Lux.github.io/master/img/metas/dsc.jpg) no-repeat;
+        background-size: 100%;
+        height: 850px;
+     }
+  
+}
+
+
+.boxthings4{
+    //background-color: #cbcbcb;
+    padding-top: 1%;
+    padding-bottom: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    //grid-template-rows: 1fr;
+    grid-gap: 5px;
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 100%;
+    height: 100%;
+    //background: linear-gradient( to left, rgba(255, 255, 255, 0) 0%,#030303 20%,#030303 80%, rgba(255, 255, 255, 0) 100%);
+}
+
+
+.boxthings2{
+    padding-top: 20px;
+    padding-bottom: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 100%;
+    height: 100%;
+    //background: linear-gradient( to left, rgba(255, 255, 255, 0) 0%,#030303 20%,#030303 80%, rgba(255, 255, 255, 0) 100%);
+    text-align: bottom;
+    color: white;
+}
+.boxthings2:hover > img{
+    opacity: 0.7;
+    transition: filter 0.4s ease-in-out;
+        -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+    filter: grayscale(100%)blur(2px); /* FF 35+ */
+}
+.boxthings2:hover > img:hover{
+    opacity: 1;
+    filter: blur(0px);
+    filter: grayscale(0%); /* FF 35+ */
+}
+.boxthings2:hover > div{
+    
+    opacity: 0.7;
+    filter: grayscale(100%)blur(2px); /* FF 35+ */
+}
+.boxthings2:hover > div:hover{
+    opacity: 1;
+    filter: blur(0px);
+}
+.boxthings2 > div{
+    text-align: center;
+      
+
+    &:nth-child(1) {
+        background: url(https://raw.githubusercontent.com/Zavvitar/Lux.github.io/master/img/Raid/1.jpg) no-repeat;
+        height: 280px;
+        background-position: center;
+        background-size: cover;
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+        box-shadow: $shadow;
+
+      }
+    &:nth-child(2) {
+        background: url(https://raw.githubusercontent.com/Zavvitar/Lux.github.io/master/img/Raid/2.png) no-repeat;
+        height: 280px;
+        background-position: center;
+        background-size: cover;
+        border-right: none;
+        border-bottom: none;
+        box-shadow: $shadow;
+      }
+    &:nth-child(3) {
+        background: url(https://raw.githubusercontent.com/Zavvitar/Lux.github.io/master//img/Raid/3.png) no-repeat;
+        height: 280px;
+        background-position: center;
+        background-size: cover;
+        border-right: none;
+        border-bottom: none;
+        box-shadow: $shadow;
+    }
+
+
+    &:hover {
+        height:280px;
+        z-index: 1000;
+        background-position: center;
+        background-size: cover;
+        transition: transform 0.4s ease-in-out;
+        transform: scale(2);
+      }    
+    }
+
+.boxthings3{
+    //padding-top: 5px;
+    padding-bottom: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 100%;
+    height: 100%;
+    //background: linear-gradient( to left, rgba(255, 255, 255, 0) 0%,#030303 20%,#030303 80%, rgba(255, 255, 255, 0) 100%);
+    text-align: bottom;
+    color: white;
+}
+.boxthings3:hover > img{
+    opacity: 0.7;
+    transition: filter 0.4s ease-in-out;
+        -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+    filter: grayscale(100%)blur(2px); /* FF 35+ */
+}
+.boxthings3:hover > img:hover{
+    opacity: 1;
+    filter: blur(0px);
+    filter: grayscale(0%); /* FF 35+ */
+}
+.boxthings3:hover > div{
+        
+    opacity: 0.7;
+    filter: grayscale(100%)blur(2px); /* FF 35+ */
+}
+.boxthings3:hover > div:hover{
+    opacity: 1;
+    filter: blur(0px);
+}
+.boxthings3 > div{
+    text-align: center;
+          
+    
+    &:nth-child(1) {
+        background: url(https://raw.githubusercontent.com/Zavvitar/Lux.github.io/master/img/Raid/1.jpg) no-repeat;
+        height: 280px;
+        background-position: center;
+        background-size: cover;
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+        box-shadow: $shadow;
+    
+        }
+    &:nth-child(2) {
+        background: url(https://raw.githubusercontent.com/Zavvitar/Lux.github.io/master/img/Raid/2.png) no-repeat;
+        height: 280px;
+        background-position: center;
+        background-size: cover;
+        border-right: none;
+        border-bottom: none;
+        box-shadow: $shadow;
+        }
+    &:nth-child(3) {
+        background: url(https://raw.githubusercontent.com/Zavvitar/Lux.github.io/master//img/Raid/3.png) no-repeat;
+        height: 280px;
+        background-position: center;
+        background-size: cover;
+        border-right: none;
+        border-bottom: none;
+        box-shadow: $shadow;
+        }
+    &:nth-child(4) {
+        background: url(https://raw.githubusercontent.com/Zavvitar/Lux.github.io/master//img/Raid/4.png) no-repeat;
+        height: 280px;
+        background-position: center;
+        background-size: cover;
+        border-right: none;
+        border-bottom: none;
+        box-shadow: $shadow;
+        }
+    &:nth-child(5) {
+        background: url(https://raw.githubusercontent.com/Zavvitar/Lux.github.io/master//img/Raid/5.png) no-repeat;
+        height: 280px;
+        background-position: center;
+        background-size: cover;
+        border-right: none;
+        border-bottom: none;
+        box-shadow: $shadow;
+        }
+    &:nth-child(6) {
+        background: url(https://raw.githubusercontent.com/Zavvitar/Lux.github.io/master//img/Raid/6.png) no-repeat;
+        height: 280px;
+        background-position: center;
+        background-size: cover;
+        border-right: none;
+        border-bottom: none;
+        box-shadow: $shadow;
+        }
+    &:nth-child(7) {
+        background: url(https://raw.githubusercontent.com/Zavvitar/Lux.github.io/master//img/Raid/7.png) no-repeat;
+        height: 280px;
+        background-position: center;
+        background-size: cover;
+        border-right: none;
+        border-bottom: none;
+        box-shadow: $shadow;
+        }
+    &:nth-child(8) {
+        background: url(https://raw.githubusercontent.com/Zavvitar/Lux.github.io/master//img/Raid/8.png) no-repeat;
+        height: 280px;
+        background-position: center;
+        background-size: cover;
+        border-right: none;
+        border-bottom: none;
+        box-shadow: $shadow;
+        }
+    &:nth-child(9) {
+        background: url(https://raw.githubusercontent.com/Zavvitar/Lux.github.io/master//img/Raid/9.png) no-repeat;
+        height: 280px;
+        background-position: center;
+        background-size: cover;
+        border-right: none;
+        border-bottom: none;
+        box-shadow: $shadow;
+        }
+    
+    
+    &:hover {
+        height:280px;
+        z-index: 1000;
+        background-position: center;
+        background-size: cover;
+        transition: transform 0.4s ease-in-out;
+        transform: scale(2);
+        }    
+    }    
+
+
+.toseemore{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 100%;
+    height: 350px;
+    //background: linear-gradient( to left, rgba(255, 255, 255, 0) 0%,#030303 20%,#030303 80%, rgba(255, 255, 255, 0) 100%);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.thanos{
+    color:white;
+    margin: 0 auto;
+    padding-top: 2%;
+}
+
+
+.foot{
+
+    
+    background-color: black;
+    margin: auto;
+    position: relative;
+//    max-width: 1280px;
+    nav{
+        max-width: 1280px;
+        //background-color: rgb(0, 0, 0);
+        //background-image: linear-gradient(359deg, #000000fb 0%,#16161694 74%);
+    }
+
+    a{
+        font-size: small;
+        text-align: right;
+        box-shadow: none;
+        color: grey;
+        background-color: black;
+        background-image: none;
+    }
+    a:hover{
+        background-color: black;
+        background-image: none;
+        box-shadow: none;
+        transition: none;
+        transform: none;
+        color:grey;
+    }
+}
+#image1{
+    background-color: black;
+    object-fit: cover;
+    box-shadow: $shadow;
+}
+#image2{
+    background-color: black;
+    object-fit: cover;
+    box-shadow: $shadow;
+}
+#image3{
+    background-color: black;
+    object-fit: cover;
+    box-shadow: $shadow;
+}
+#image1:hover {
+    
+    box-shadow: $footershadow;
+    color: grey;
+    transition: transform 0.25s ease-in-out;
+    transform: scale(1.5);
+    animation-play-state: paused;
+
+}
+#image2:hover {
+    box-shadow: $footershadow;
+    color: grey;
+    transition: transform 0.25s ease-in-out;
+    transform: scale(0.95);
+
+}
+#image3:hover {
+    box-shadow: $footershadow;
+    color: grey;
+    transition: transform 0.25s ease-in-out;
+    transform: scale(0.95);
+
+}
+
+.dave{
+    background: url(https://raw.githubusercontent.com/Zavvitar/Lux.github.io/master//img/discord_logo.png) no-repeat;
+    height: 142px;
+    background-position: top;
+    background-size: contain;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+.homelander{
+    background: url(https://raw.githubusercontent.com/Zavvitar/Lux.github.io/master//img/logo/about.png) no-repeat;
+    height: 142px;
+    background-position: top;
+    background-size: contain;
+    border-left: none;
+    border-right: none;
+}
+
+.card-headerinv2{
+    background-image: linear-gradient(180deg, #2c025c00 0%,#4e038b77 74%);
+    padding-left: 2%;
+    padding-right: 2%;
+    font-size: 30px;
+}
+
+
+.card-header{
+    text-align: center;
+    color: #303030;
+    padding-top: 45%;
+    padding-bottom: 50%;
+    font-size: 70px;
+    font-family: "Robota-NonCommercial";
+}
+.card-header2{
+    padding-right: 15%;
+    text-align: center;
+    color: #303030;
+    padding-top: 55%;
+    padding-bottom: 30%;
+    font-size: 70px;
+    font-family: "Robota-NonCommercial";
+}
+
+.card-header3{
+    box-shadow: inset 0 11px 11px -7px rgba(0, 0, 0, 0.55);
+    max-height:100px;
+    padding-top: 1%;
+    text-align: center;
+    color: #303030;
+    //padding-top: 55%;
+    //padding-bottom: 30%;
+    font-size: 70px;
+    font-family: "Robota-NonCommercial";
+}
+
+.card-header4{        //0px 6px 11px -1px rgba(0,0,0,0.53)
+    box-shadow: inset 0 11px 11px -7px rgba(0, 0, 0, 0.55);
+    max-height:100px;
+    padding-top: 3%;
+    text-align: center;
+    color: #303030;
+    //padding-top: 55%;
+    //padding-bottom: 30%;
+    font-size: 70px;
+    font-family: "Robota-NonCommercial";
+}
+
+.photostext{
+    text-align: center;
+    font-size: 17px;
+    border-bottom: 2px solid #30303057;
+}
+
+.open{
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+    position: relative;
+    //z-index: 500;
+    border-bottom: 2px solid #30303057;
+    visibility: visible;
+}
+
+.open:focus-visible{
+    z-index: 10000;
+}
+
+#modal3 {
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+    border-bottom: 2px solid #30303057;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+}
+
+.modal3__window {
+    z-index: 100;
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+    position: relative;
+    background-color: white;
+    padding: 4em 2em;
+    margin:auto;
+    }
+
+.modal3__close {
+    background-color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    position: absolute;
+    }
+
+#modal3:not(:target) {
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.landingwords{
+    margin: auto;
+    text-align: center;
+    max-width: 500px;
+}
+
+
+
+
+#modal {
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+    border-bottom: 2px solid #30303057;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+}
+
+.modal__window {
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+    position: relative;
+    //background-color: white;
+    padding: 4em 2em;
+    margin:auto;
+    }
+
+.modal__close {
+    background-color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    position: absolute;
+    }
+
+#modal:not(:target) {
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#modal2 {
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+    border-bottom: 2px solid #30303057;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+}
+
+.modal2__window {
+    z-index: 100;
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+    position: relative;
+    background-color: white;
+    padding: 4em 2em;
+    margin:auto;
+    }
+
+.modal2__close {
+    background-color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    position: absolute;
+    }
+
+#modal2:not(:target) {
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card-headerinv{
+    font-family: $usedfont;
+    text-align: center;
+    color: #303030;
+    border-bottom: solid 3px #303030;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    font-size: 30px;
+    //margin: auto;
+    //width: 90%;
+}
+
+.card-header-links{
+    //border-bottom: solid 2px rgb(32, 32, 32);
+    text-align: center;
+    color: #303030;
+    background-color: #dadada;
+    font-size: 30px;
+}
+
+.card-text{
+    text-align: center;
+    color: #303030;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    padding-right: 10%;
+}
+
+
+.phototitle {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 100%;
+    height: 90px;
+    //background: linear-gradient( to left, rgba(255, 255, 255, 0) 0%,#030303 20%,#030303 80%, rgba(255, 255, 255, 0) 100%);
+}
+.phototitleimage{
+    background: url(https://raw.githubusercontent.com/Zavvitar/Lux.github.io/master/img/logo/clanphotos.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 110px;
+}
+
+.phototitleimage2{
+    background: url(https://raw.githubusercontent.com/Zavvitar/Lux.github.io/master/img/logo/BungieLinks.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 120px;
+
+
+}
+.phototitleimage3{
+    background: url(https://raw.githubusercontent.com/Zavvitar/Lux.github.io/master/img/logo/Map.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 120px;
+
+
+}
+
+.main-paralax {
+    /* Fill the available space */
+    height: 100vh;
+    
+    /* Make the children of the element closer to the viewport */
+    perspective: 2px;
+    
+    /* Hide the overflow */
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .main-paralax::-webkit-scrollbar{
+      display: none;
+  }
+
+  
+  /* General styling  */
+  .section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    //grid-template-rows: 3fr;
+    position: relative;
+    //display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  /* Different background colors for demo purpose */
+  .static-one {
+    //background-color: rgb(243, 243, 243);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(199,199,199,1) 100%);
+    -webkit-box-shadow: inset 0px 10px 14px -8px rgba(0,0,0,0.72);
+    -moz-box-shadow: inset 0px 10px 14px -8px rgba(0,0,0,0.72);
+    box-shadow: inset 0px 10px 14px -8px rgba(0,0,0,0.72);
+    padding-right: 1%;
+    padding-top: 1%;
+    padding-left: 1%;
+    
+  }
+
+  .static-one > div{
+    padding-bottom: 10%;
+    text-align: center;
+  }
+
+  
+  .static-two {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr ;
+    //background-color: #f3f3f3;
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(199,199,199,1) 100%);
+    //padding-left: 1%;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 16px 3px rgba(0,0,0,0.61);
+    -moz-box-shadow: 0px 0px 16px 3px rgba(0,0,0,0.61);
+    box-shadow: 0px 0px 16px 3px rgba(0,0,0,0.61);
+  }
+  
+ // .static-three {
+ //   display: grid;
+ //   grid-template-columns: 1.5fr 2fr;
+ //   //background-color: rgb(243, 243, 243);
+ //   background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(199,199,199,1) 100%);
+ //   -webkit-box-shadow: inset 0px 9px 20px -18px rgba(0,0,0,0.75);
+ //   -moz-box-shadow: inset 0px 9px 20px -18px rgba(0,0,0,0.75);
+ //   box-shadow: inset 0px 9px 20px -18px rgba(0,0,0,0.75);
+ //   padding-right: 1%;
+ //   padding-top: 1%;
+ //   padding-left: 1%;
+ //   -webkit-box-shadow: 0px 0px 16px 3px rgba(0,0,0,0.61);
+ //   -moz-box-shadow: 0px 0px 16px 3px rgba(0,0,0,0.61);
+ //   box-shadow: 0px 0px 16px 3px rgba(0,0,0,0.61);  
+ //   overflow-y:hidden;
+ // }
+
+  .static-three {
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr ;
+    //background-color: #f3f3f3;
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(199,199,199,1) 100%);
+    //padding-left: 1%;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 16px 3px rgba(0,0,0,0.61);
+    -moz-box-shadow: 0px 0px 16px 3px rgba(0,0,0,0.61);
+    box-shadow: 0px 0px 16px 3px rgba(0,0,0,0.61);
+  }
+
+
+
+
+  .static-three > div{
+    padding-bottom: 10%;
+    text-align: center;
+  }
+
+.tucked{
+    overflow-y: hidden;
+}
+
+
+  .linebreakimagenew{
+    background-color: black;
+    background: url(https://raw.githubusercontent.com/Zavvitar/Lux.github.io/master//img/Raid/line.png) no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+ 
+  .static-four {
+    height:100px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr;
+    margin: 0 auto;
+    width: 100%;
+    height: 90px;
+    //background: linear-gradient( to left, rgba(255, 255, 255, 0) 0%,#030303 20%,#030303 80%, rgba(255, 255, 255, 0) 100%);
+  }
+
+  .static-five {
+    grid-template-columns: 1fr;
+    height: 5px;
+    color: rgb(207, 207, 207);
+    font-weight: normal;
+    font-size: 15px;
+    text-align: right;
+    padding-right: 10px;
+    text-transform: none;
+  }
+
+
+  .parallax::after {
+    /* Position the pseudo-element to fill the parent */
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+    /* Scale the image to full */
+    background-size: cover;
+    
+    /* Move the element back then scale the element, it helps to appears more slowly */
+    transform: translateZ(-1px) scale(1.7);
+    
+    /* Set the parallax section before the other elements. */
+    z-index: -1;
+  }
+  
+  /* Different background images */
+  .parallax-one::after {
+      
+    background-image: url(/img/Bckgrnd/Europa.jpg);
+    background-size: fit;
+  }
+  
+  .parallax-two::after {
+    background-image: url(/img/Bckgrnd/nessus.jpg);
+  }
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 780px){
+    .banner{
+        max-width: 600px;
+    }
+    .head{
+        max-width: 600px;
+    }
+    .boxthings{
+        max-width: 600px;
+    }   
+    .foot{
+        max-width: 600px;
+    }
+    nav ul{
+        margin: 0;
+        padding: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+}
+
+
+
+
+
