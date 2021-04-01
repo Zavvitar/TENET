@@ -150,23 +150,26 @@ iframe{
     font-family: $usedfont;
 }
 
+//.onlinemembers{
+   // font-family: $usedfont;
+    //max-height: 100px;
+//}
+
 .memberspadding{
-    max-height:400px;
-    //overflow-y: hidden;
+    max-height:450px;
+    overflow-y: hidden;
     overflow-x: hidden;
     //padding-top: 22%;
     padding-bottom: 20%;
-    direction:rtl;
+
 }
 
-
 .memberspaddingshadow{
-    max-height:500px;
-    overflow-y: hidden;
-    overflow-x: hidden;
-    padding-top: 22%;
-    padding-bottom: 20%;
-    direction:rtl;
+    display: grid;
+    font-family: $usedfont;
+    max-height: 100px;
+    color:black;
+    font-size: 30px;
 }
 
 

@@ -147,19 +147,19 @@ iframe {
 }
 
 .memberspadding {
-  max-height: 400px;
+  max-height: 450px;
+  overflow-y: hidden;
   overflow-x: hidden;
   padding-bottom: 20%;
-  direction: rtl;
 }
 
 .memberspaddingshadow {
-  max-height: 500px;
-  overflow-y: hidden;
-  overflow-x: hidden;
-  padding-top: 22%;
-  padding-bottom: 20%;
-  direction: rtl;
+  display: -ms-grid;
+  display: grid;
+  font-family: "Robota-NonCommercial", "san-serif";
+  max-height: 100px;
+  color: black;
+  font-size: 30px;
 }
 
 .contain {
