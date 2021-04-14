@@ -1086,6 +1086,41 @@ iframe{
     opacity: 0;
 }
 
+#modal8 {
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+    border-bottom: 2px solid #30303057;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+}
+
+.modal8__close {
+    background-color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    position: absolute;
+    }
+
+#modal8:not(:target) {
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+
+
 
 
 #modal {
