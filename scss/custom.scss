@@ -859,6 +859,12 @@ iframe{
     z-index: 10000;
 }
 
+.landingwords{
+    margin: auto;
+    text-align: center;
+    max-width: 500px;
+}
+
 #modal3 {
     text-decoration: none;
     text-align: center;
@@ -876,25 +882,6 @@ iframe{
     z-index: 50;
 }
 
-.modal3__window {
-    z-index: 100;
-    text-decoration: none;
-    text-align: center;
-    font-size: 17px;
-    position: relative;
-    background-color: white;
-    padding: 4em 2em;
-    margin:auto;
-    }
-
-.modal3__close {
-    background-color: white;
-    text-decoration: none;
-    text-align: center;
-    font-size: 20px;
-    position: absolute;
-    }
-
 #modal3:not(:target) {
     text-decoration: none;
     text-align: center;
@@ -903,11 +890,7 @@ iframe{
     opacity: 0;
 }
 
-.landingwords{
-    margin: auto;
-    text-align: center;
-    max-width: 500px;
-}
+
 
 #modal4 {
     text-decoration: none;
@@ -926,24 +909,6 @@ iframe{
     z-index: 50;
 }
 
-.modal3__window {
-    z-index: 100;
-    text-decoration: none;
-    text-align: center;
-    font-size: 17px;
-    position: relative;
-    background-color: white;
-    padding: 4em 2em;
-    margin:auto;
-    }
-
-.modal4__close {
-    background-color: white;
-    text-decoration: none;
-    text-align: center;
-    font-size: 20px;
-    position: absolute;
-    }
 
 #modal4:not(:target) {
     text-decoration: none;
@@ -970,24 +935,6 @@ iframe{
     z-index: 50;
 }
 
-.modal3__window {
-    z-index: 100;
-    text-decoration: none;
-    text-align: center;
-    font-size: 17px;
-    position: relative;
-    background-color: white;
-    padding: 4em 2em;
-    margin:auto;
-    }
-
-.modal5__close {
-    background-color: white;
-    text-decoration: none;
-    text-align: center;
-    font-size: 20px;
-    position: absolute;
-    }
 
 #modal5:not(:target) {
     text-decoration: none;
@@ -1014,24 +961,6 @@ iframe{
     z-index: 50;
 }
 
-.modal3__window {
-    z-index: 100;
-    text-decoration: none;
-    text-align: center;
-    font-size: 17px;
-    position: relative;
-    background-color: white;
-    padding: 4em 2em;
-    margin:auto;
-    }
-
-.modal6__close {
-    background-color: white;
-    text-decoration: none;
-    text-align: center;
-    font-size: 20px;
-    position: absolute;
-    }
 
 #modal6:not(:target) {
     text-decoration: none;
@@ -1059,24 +988,6 @@ iframe{
     z-index: 50;
 }
 
-.modal3__window {
-    z-index: 100;
-    text-decoration: none;
-    text-align: center;
-    font-size: 17px;
-    position: relative;
-    background-color: white;
-    padding: 4em 2em;
-    margin:auto;
-    }
-
-.modal7__close {
-    background-color: white;
-    text-decoration: none;
-    text-align: center;
-    font-size: 20px;
-    position: absolute;
-    }
 
 #modal7:not(:target) {
     text-decoration: none;
@@ -1103,14 +1014,6 @@ iframe{
     z-index: 50;
 }
 
-.modal8__close {
-    background-color: white;
-    text-decoration: none;
-    text-align: center;
-    font-size: 20px;
-    position: absolute;
-    }
-
 #modal8:not(:target) {
     text-decoration: none;
     text-align: center;
@@ -1136,13 +1039,6 @@ iframe{
     z-index: 50;
 }
 
-.modal9__close {
-    background-color: white;
-    text-decoration: none;
-    text-align: center;
-    font-size: 20px;
-    position: absolute;
-    }
 
 #modal9:not(:target) {
     text-decoration: none;
@@ -1152,8 +1048,30 @@ iframe{
     opacity: 0;
 }
 
+#modal10 {
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+    border-bottom: 2px solid #30303057;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+}
 
-
+#modal10:not(:target) {
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+    visibility: hidden;
+    opacity: 0;
+}
 
 #modal {
     text-decoration: none;
@@ -1215,25 +1133,6 @@ iframe{
     z-index: 50;
 }
 
-.modal2__window {
-    z-index: 100;
-    text-decoration: none;
-    text-align: center;
-    font-size: 17px;
-    position: relative;
-    background-color: white;
-    padding: 4em 2em;
-    margin:auto;
-    }
-
-.modal2__close {
-    background-color: white;
-    text-decoration: none;
-    text-align: center;
-    font-size: 20px;
-    position: absolute;
-    }
-
 #modal2:not(:target) {
     text-decoration: none;
     text-align: center;
@@ -1241,19 +1140,6 @@ iframe{
     visibility: hidden;
     opacity: 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .card-headerinv{
     font-family: $usedfont;
