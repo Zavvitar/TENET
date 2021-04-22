@@ -142,7 +142,7 @@
 <script type="text/javascript">
             
     function sendMessage() {
-      
+
     var input1 = document.getElementById('userinput');
     var input2 = document.getElementById('userinput1');
 
@@ -170,7 +170,8 @@
     else {
       alert("Name AND 'Tell us...' must be filled out");
     } 
-
+    document.getElementById('userinput').value = '';
+    document.getElementById('userinput1').value = '';
 
   }
 </script>
