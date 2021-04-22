@@ -1,28 +1,45 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discord Webhook Tutorial</title>
-  </head>
+<html>
   <body>
-    <button onclick="sendMessage()">Send</button>
-  </body>
+          <input type="text" required placeholder ="username" id="userinput">
+          <br>
+          <input type="text" required placeholder ="username" id="userinput1" >
+          <br>
+          <input type="submit" onclick="sendMessage()"></input>
+   
+    <script type="text/javascript">
+            
+        function sendMessage() {
+          
+        var input1 = document.getElementById('userinput');
+        var input2 = document.getElementById('userinput1');
 
-  <script>
-    function sendMessage() {
-      var request = new XMLHttpRequest();
-      request.open("POST", "https://discord.com/api/webhooks/832738471101202443/0S6EmEa-ml49-FWkkE2ATRyCY_k4XzzCIkQGMp2JUf6GFHNAwGxxGcZY5ii8HBjPmQzn");
+        if (input1.value != ""){
+          if (input2.value != ""){
+            var request = new XMLHttpRequest();
+            request.open("POST","https://discord.com/api/webhooks/832738471101202443/0S6EmEa-ml49-FWkkE2ATRyCY_k4XzzCIkQGMp2JUf6GFHNAwGxxGcZY5ii8HBjPmQzn");
 
-      request.setRequestHeader('Content-type', 'application/json');
+            request.setRequestHeader('Content-type', 'application/json');
 
-      var params = {
-        username: "My Webhook Name",
-        avatar_url: "",
-        content: "The message to send"
+
+              
+            var params = {
+              username: "Website Form Submission",
+              avatar_url: "",
+              content:("__**Discord Name:**__\n" +input1.value +"\n__**Description:**__\n"+ input2.value),
+            }
+
+            request.send(JSON.stringify(params));
+            }
+          else {
+            alert("Name must be filled out");
+          } 
+        }
+        else {
+          alert("Name must be filled out");
+        } 
+
+
       }
-
-      request.send(JSON.stringify(params));
-    }
-  </script>
+    </script>
+    </body>    
 </html>
