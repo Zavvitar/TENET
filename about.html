@@ -44,7 +44,7 @@
             <i class = "fas fa-bars"></i>
         </button>
             <ul class = "nav-ul" id = "nav-ul">
-                <li><a href ="index.html"></a></li>
+                <li><a href ="index.html">Home</a></li>
                 <li><a class = "active" href ="about.html">About</a></li>
                 <li><a href ="members.html">Clan Members</a></li>
                 <li><a href ="photos.html">Photos</a></li>
@@ -78,15 +78,44 @@
                 <div class = boxthings12>
                     <div class="card-text2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus beatae optio vero. Quae illo possimus in ad tempore iure architecto odit, eligendi ex, atque tenetur doloribus aspernatur consectetur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro veniam modi earum at cumque temporibus sint et cupiditate quo aut praesentium, similique ad impedit repellat, accusantium natus quisquam blanditiis hic! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur temporibus asperiores beatae. Ea, autem fugiat mollitia est doloribus obcaecati culpa officiis consequuntur reprehenderit ullam! Impedit quibusdam odio tempora optio ab></div>
                     <div class= "formboxthing">
-                        <input type="text" required placeholder ="Example#1234" id="userinput">
+                        <p class = "minititle">Discord Tag and #:</p>
+                        <input type="text" required placeholder ="Example#1234" id="userinput" autocomplete="off">
+                        <p class = "minititle">Tell us:</p>
+                        <!--input type="textarea" required placeholder ="Tell us about yourself" id="userinput1" autocomplete="off"-->
+                        <textarea placeholder ="Tell us about yourself" id="userinput1" autocomplete="off"></textarea>
+                        <br>
                         <input type="submit" onclick="sendMessage()"></input>
-                        </br>
-                        <input type="text" required placeholder ="Tell us about yourself" id="userinput1" >
-
                     </div>
                 </div>
                 
                 <div class = "card-header2">DISCORD</div>
+           
+
+            </div>
+
+            <div class="boxthings90">
+
+                <div class = "card-header2">DISCORD</div>
+                <div class = boxthings12>
+                    <div class="card-text2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus beatae optio vero. Quae illo possimus in ad tempore iure architecto odit, eligendi ex, atque tenetur doloribus aspernatur consectetur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro veniam modi earum at cumque temporibus sint et cupiditate quo aut praesentium, similique ad impedit repellat, accusantium natus quisquam blanditiis hic! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur temporibus asperiores beatae. Ea, autem fugiat mollitia est doloribus obcaecati culpa officiis consequuntur reprehenderit ullam! Impedit quibusdam odio tempora optio ab></div>
+                    <div class= "formboxthing">
+                        <p class = "minititle">Discord Tag and #:</p>
+                        <input type="text" required placeholder ="Example#1234" id="userinput" autocomplete="off">
+                        <p class = "minititle">Tell us:</p>
+                        <!--input type="textarea" required placeholder ="Tell us about yourself" id="userinput1" autocomplete="off"-->
+                        <textarea placeholder ="Tell us about yourself" id="userinput1" autocomplete="off"></textarea>
+                        <br>
+                        <input type="submit" onclick="sendMessage()"></input>
+                    </div>
+                </div>
+                <div class = "memberspaddingshadow">
+                    <div class ="onlinemembers">ONLINE MEMBERS</div>
+                    <div class="memberspadding" align = "center">
+                        <iframe title="Online Members" src="https://valendres.github.io/react-discord-widget/?serverId=821520651868700682&serverName=Currently Online Members&showHeader=false&showChannels=false&memberFontSize=1rem&memberFontColor#303030&bodyBackgroundColor=#dadada&showServerStats=false&refreshInterval=500&headerBackgroundColor=#dadada&headerFontColor=#303030" width="auto" allowtransparency="true" frameborder="0"></iframe>
+                    </div>
+                </div>
+
+           
 
             </div>
 

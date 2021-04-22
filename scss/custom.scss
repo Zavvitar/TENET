@@ -371,6 +371,13 @@ iframe{
     color:black;
 }
 
+.boxthings90{
+    display:none;
+    max-height:500px;
+    grid-template-columns: 1fr 2fr 1fr;
+    color:black;
+}
+
 
 
 .boxthings7{
@@ -701,7 +708,6 @@ iframe{
 }
 
 
-
 .thanos{
     color:white;
     margin: 0 auto;
@@ -710,8 +716,7 @@ iframe{
 
 
 .foot{
-
-    
+    height:100px;
     background-color: black;
     margin: auto;
     position: relative;
@@ -835,6 +840,14 @@ iframe{
     font-size: 70px;
     font-family: "Robota-NonCommercial";
 }
+
+.minititle{
+    text-decoration: underline;
+    color: #303030;
+    
+}
+
+
 
 .card-header8{
     //box-shadow: inset 0 11px 11px -7px rgba(0, 0, 0, 0.55);
@@ -1393,15 +1406,126 @@ iframe{
     display: none; //used for hamburger menu
   }
 
-.input{
-    height: 100px;
+input[type = text]{
+    width: 200px;
 }
+
+textarea{
+    font-family: "Mukta", sans-serif;
+    height: 30px;
+    width: 200px;
+    transition: 0.5s ease-in-out;
+}
+textarea:focus {
+    width: 70%;
+    height: 50px;
+  }
 
 
 
 
 
 @media only screen and (max-width: 780px){
+    .landingwords{
+        font-size: 30px;
+    }
+
+    .static-three > div {
+        padding-bottom: 0;
+    }
+
+    nav ul li a.active{
+        padding-top: 0;
+    }
+
+    html{
+        background: none;
+        background-color: #dadada;
+    }
+    .boxthings4{
+        padding-top: 2%;
+    }
+    .boxthings11{
+        padding-top: 0;
+    }
+    .foot{
+        display: none;
+    }
+    .memberspadding{
+        height: 500px;
+    }
+    .boxthings12{
+        grid-template-rows: 0.5fr 0.6fr;
+    }
+    .formboxthing{
+        height: 10px;
+    }
+    .card-header2{
+        padding-top: 0;
+        padding-bottom: 3px;
+        padding-right: 0;
+    }
+    .card-text2{
+        padding-top: 0;
+    }
+    .boxthings{
+        background-color: #dadada;
+        max-height:200%;
+        grid-template-rows: none;
+    }
+    .boxthings9{
+        display:none;
+        max-height: none;
+        padding-top: 3%;
+        grid-template-columns: 1fr;
+    }
+
+    .boxthings90{
+        height: auto;
+        display:grid;
+        max-height: none;
+        padding-top: 3%;
+        grid-template-columns: 1fr;
+    }
+    .boxthings8{
+        height: 400px;
+        max-height: none;
+        grid-template-columns: none;
+        grid-template-rows: auto;
+    }
+    .boxthings12{
+    
+        font-size: 15px;
+    }
+    .onlinemembers{
+
+        font-size: 15px;
+    }
+    .card-header{
+        height: 70px;
+        padding-top: 5%;
+        padding-bottom: 0;
+        font-size: 30px;
+    }
+    .card-header2{
+        font-size: 30px;
+    }
+    .card-header4{
+        font-size: 30px;
+    }
+    .card-header8{
+        font-size: 30px;
+    }
+    .card-headerinv{
+        font-size: 20px;
+    }
+    .card-text{
+        //overflow-y: scroll;
+        padding-top: 1%;
+        padding-right: 5%;
+        padding-left: 5%;
+        font-size: 15px;
+    }
     .banner{
         max-width: 600px;
     }
@@ -1409,6 +1533,7 @@ iframe{
         max-width: 600px;
     }
     .boxthings{
+        height: auto;
         max-width: 600px;
     }   
     .foot{
