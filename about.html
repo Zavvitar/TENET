@@ -39,7 +39,7 @@
 
     <div class = "topNav">
         <nav class = BurgerBackground>
-        <img class ="logoImg" alt = "Logo" src ="https://raw.githubusercontent.com/Zavvitar/TENET/master/img/logo/logo.png">
+        <img class ="logoImg" alt = "Logo" src ="/img/logo/logo.png">
         <button class="hamburger" id="hamburger">
             <i class = "fas fa-bars"></i>
         </button>
@@ -75,10 +75,15 @@
                     </div>
                 </div>
 
-
-
-
-                <div class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus beatae optio vero. Quae illo possimus in ad tempore iure architecto odit, eligendi ex, atque tenetur doloribus aspernatur consectetur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro veniam modi earum at cumque temporibus sint et cupiditate quo aut praesentium, similique ad impedit repellat, accusantium natus quisquam blanditiis hic! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur temporibus asperiores beatae. Ea, autem fugiat mollitia est doloribus obcaecati culpa officiis consequuntur reprehenderit ullam! Impedit quibusdam odio tempora optio ab></div>
+                <div class = boxthings12>
+                    <div class="card-text2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus beatae optio vero. Quae illo possimus in ad tempore iure architecto odit, eligendi ex, atque tenetur doloribus aspernatur consectetur. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro veniam modi earum at cumque temporibus sint et cupiditate quo aut praesentium, similique ad impedit repellat, accusantium natus quisquam blanditiis hic! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur temporibus asperiores beatae. Ea, autem fugiat mollitia est doloribus obcaecati culpa officiis consequuntur reprehenderit ullam! Impedit quibusdam odio tempora optio ab></div>
+                    <div class= "formboxthing">
+                        <input type="text" required placeholder ="Example#1234" id="userinput">
+                        <input type="text" required placeholder ="Tell us about yourself" id="userinput1" >
+                        <input type="submit" onclick="sendMessage()"></input>
+                    </div>
+                </div>
+                
                 <div class = "card-header2">DISCORD</div>
 
             </div>
@@ -103,5 +108,41 @@
     </div>
 
 </body>
+<script type="text/javascript">
+            
+    function sendMessage() {
+      
+    var input1 = document.getElementById('userinput');
+    var input2 = document.getElementById('userinput1');
+
+    if (input1.value != ""){
+      if (input2.value != ""){
+        var request = new XMLHttpRequest();
+        request.open("POST","https://discord.com/api/webhooks/832738471101202443/0S6EmEa-ml49-FWkkE2ATRyCY_k4XzzCIkQGMp2JUf6GFHNAwGxxGcZY5ii8HBjPmQzn");
+
+        request.setRequestHeader('Content-type', 'application/json');
+
+
+          
+        var params = {
+          username: "Application",
+          avatar_url: "",
+          content:("__**Discord Name:**__\n" +input1.value +"\n__**Description:**__\n"+ input2.value),
+        }
+
+        request.send(JSON.stringify(params));
+        }
+      else {
+        alert("Name AND 'Tell us...' must be filled out");
+      } 
+    }
+    else {
+      alert("Name AND 'Tell us...' must be filled out");
+    } 
+
+
+  }
+</script>
+
 <script src="js/myscripts.js"></script>
 </html>

@@ -272,6 +272,13 @@ iframe{
      
 }
 
+.boxthings12{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    //padding-top: 20%;
+}
+
+
 .boxthings11{
     //position: relative;
     //z-index: 100;
@@ -1185,6 +1192,17 @@ iframe{
     padding-right: 10%;
 }
 
+.card-text2{
+    text-align: center;
+    color: #303030;
+    padding-top: 15%;
+    //padding-bottom: 20%;
+    //padding-right: 10%;
+}
+.formboxthing{
+    padding-top: 5%;
+}
+
 
 .phototitle {
     display: grid;
@@ -1374,7 +1392,9 @@ iframe{
     display: none; //used for hamburger menu
   }
 
-
+.input{
+    height: 100px;
+}
 
 
 

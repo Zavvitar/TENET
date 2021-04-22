@@ -264,6 +264,13 @@ iframe {
   text-align: center;
 }
 
+.boxthings12 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
 .boxthings11 {
   padding-top: 1%;
   display: -ms-grid;
@@ -1264,6 +1271,16 @@ iframe {
   padding-right: 10%;
 }
 
+.card-text2 {
+  text-align: center;
+  color: #303030;
+  padding-top: 15%;
+}
+
+.formboxthing {
+  padding-top: 5%;
+}
+
 .phototitle {
   display: -ms-grid;
   display: grid;
@@ -1439,6 +1456,10 @@ iframe {
 
 .topNav {
   display: none;
+}
+
+.input {
+  height: 100px;
 }
 
 @media only screen and (max-width: 780px) {
