@@ -1490,6 +1490,13 @@ textarea:focus {
 }
 
 @media only screen and (max-width: 780px) {
+  iframe {
+    max-width: 400px;
+    max-height: 225px;
+  }
+  .boxthings7 {
+    grid: none;
+  }
   .landingwords {
     font-size: 30px;
   }
@@ -1576,6 +1583,7 @@ textarea:focus {
     font-size: 30px;
   }
   .card-header4 {
+    padding-bottom: 0;
     font-size: 30px;
   }
   .card-header8 {
