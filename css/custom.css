@@ -20,8 +20,8 @@ html {
 
 /* variables */
 @font-face {
-  font-family: 'Robota-NonCommerical';
-  src: url(/docs/Robota.woff) format("woff");
+  font-family: "Robota-NonCommercial";
+  src: url(https://github.com/Zavvitar/TENET/blob/master/docs/Robota.woff/docs/Robota.woff) format("woff");
 }
 
 html {
@@ -148,7 +148,7 @@ iframe {
 }
 
 .usedfont {
-  font-family: "Robota-NonCommercial", "san-serif";
+  font-family: "Robota-NonCommercial";
 }
 
 .memberspadding {
@@ -161,7 +161,7 @@ iframe {
 .memberspaddingshadow {
   display: -ms-grid;
   display: grid;
-  font-family: "Robota-NonCommercial", "san-serif";
+  font-family: "Robota-NonCommercial";
   max-height: 100px;
   color: black;
   font-size: 30px;
@@ -1420,7 +1420,7 @@ iframe {
 }
 
 .card-headerinv {
-  font-family: "Robota-NonCommercial", "san-serif";
+  font-family: "Robota-NonCommercial";
   text-align: center;
   color: #303030;
   border-bottom: solid 3px #303030;
