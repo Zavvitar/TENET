@@ -10,7 +10,7 @@ $font: 'Mukta', sans-serif;
 
 @font-face {
     font-family: 'Robota-NonCommerical';
-    src: url(/docs/Robota.woff);
+    src: url(/docs/Robota.woff) format("woff");
 }
 
 $usedfont: 'Robota-NonCommercial', 'san-serif';
