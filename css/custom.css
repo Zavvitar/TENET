@@ -21,7 +21,7 @@ html {
 /* variables */
 @font-face {
   font-family: 'Robota-NonCommercial';
-  src: url("https://raw.githubusercontent.com/Zavvitar/TENET/master/docs/RobotaNonCommercialRegular.woff2") format("woff2"), url("https://raw.githubusercontent.com/Zavvitar/TENET/master/docs/RobotaNonCommercialRegular.woff") format("woff");
+  src: url("https://raw.githubusercontent.com/Zavvitar/TENET/master/docs/RobotaNonCommercialRegular.woff2") format("woff2"), url("https://raw.githubusercontent.com/Zavvitar/TENET/master/docs/RobotaNonCommercialRegular.woff") format("woff"), url("https://raw.githubusercontent.com/Zavvitar/TENET/master/docs/RobotaNonCommercialRegular.otf") format("otf");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
