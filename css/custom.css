@@ -20,8 +20,11 @@ html {
 
 /* variables */
 @font-face {
-  font-family: "Robota-NonCommercial";
-  src: url(https://github.com/Zavvitar/TENET/blob/master/docs/Robota.woff/docs/Robota.woff) format("woff");
+  font-family: 'Robota-NonCommercial';
+  src: url("/docs/RobotaNonCommercialRegular.woff2") format("woff2"), url("/docs/RobotaNonCommercialRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 html {

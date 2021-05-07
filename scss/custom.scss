@@ -8,9 +8,15 @@ $tophovershadow: 0px 1px 5px rgb(207, 207, 207);
 $font: 'Mukta', sans-serif;
 
 
+
+
 @font-face {
-    font-family: "Robota-NonCommercial";
-    src: url(https://github.com/Zavvitar/TENET/blob/master/docs/Robota.woff/docs/Robota.woff) format("woff");
+    font-family: 'Robota-NonCommercial';
+    src: url('/docs/RobotaNonCommercialRegular.woff2') format('woff2'),
+        url('/docs/RobotaNonCommercialRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 //$usedfont: 'Robota-NonCommercial', 'san-serif';
