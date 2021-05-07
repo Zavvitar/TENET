@@ -6,8 +6,14 @@ $boxhovershadow: 0px 1px 5px rgb(31, 30, 30);
 $footershadow: 0px 1px 5px rgba(31, 30, 30, 0.966);
 $tophovershadow: 0px 1px 5px rgb(207, 207, 207);
 $font: 'Mukta', sans-serif;
-$usedfont: 'Robota-NonCommercial', 'san-serif';
 
+
+@font-face {
+    font-family: 'Robota-NonCommerical';
+    src: url(/docs/Robota.woff);
+}
+
+$usedfont: 'Robota-NonCommercial', 'san-serif';
 
 //helloooo
 

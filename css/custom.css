@@ -19,6 +19,11 @@ html {
 }
 
 /* variables */
+@font-face {
+  font-family: 'Robota-NonCommerical';
+  src: url(/docs/Robota.woff);
+}
+
 html {
   background: radial-gradient(circle, #e6e6e6 0%, #b6b6b6 100%);
 }
