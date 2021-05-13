@@ -1,16 +1,99 @@
-<html>
-  <body>
-          <input type="text" required placeholder ="username" id="userinput">
-          <br>
-          <input type="text" required placeholder ="username" id="userinput1" >
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+    <link rel="shortcut icon" type="image/png" href="https://raw.githubusercontent.com/Zavvitar/TENET/master/img/logo/Icon2.png"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href ="css/custom.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <div class = "head">
+        <header class = "contain">
+            <nav>
+                <ul>
+                    <li><a class = "homepage" href ="index.html"></a></li>
+                    <li><a href ="about.html">About</a></li>
+                    <li><a href ="members.html">Clan Members</a></li>
+                    <li><a href ="photos.html">Photos</a></li>
+                    <li><a href ="bungielinks.html">Bungie Links</a></li>
+                    <li><a class = "active" href ="map.html">Map</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class = "topNav">
+        <nav class = BurgerBackground>
+        <img class ="logoImg" alt = "Logo" src ="https://raw.githubusercontent.com/Zavvitar/TENET/master/img/logo/logo.png">
+        <button class="hamburger" id="hamburger">
+            <i class = "fas fa-bars"></i>
+        </button>
+            <ul class = "nav-ul" id = "nav-ul">
+                <li><a href ="index.html">Home</a></li>
+                <li><a href ="about.html">About</a></li>
+                <li><a href ="members.html">Clan Members</a></li>
+                <li><a href ="photos.html">Photos</a></li>
+                <li><a href ="bungielinks.html">Bungie Links</a></li>
+                <li><a class = "active" href ="map.html">Map</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <div class = 'boxthings13' display = grid>
+
+      <div class = "card-header9">COMPETITION</div>
+         
+      <div class = 'boxthings14' display = grid>
+        <div></div>
+        <div class= "formboxthing">
+          <p class = "minititle">Select Name:</p>
+          <form>
+            <select id = "name" name = "dropdown">
+               <option value = "James">James</option>
+               <option value = "B3T3R">B3T3R</option>
+               <option value = "Froyo">Froyo</option>
+            </select>
+         </form>
+          <p class = "minititle">Answer:</p>
+              
+          <textarea placeholder ="Put answer here" id="userinput1" autocomplete="off"></textarea>
           <br>
           <input type="submit" onclick="sendMessage()"></input>
-   
-    <script type="text/javascript">
+        </div>
+      </div>
+    </div>
+
+    <div class ='foot'>
+      <footer class = 'containfooter'>
+          <nav>
+              <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+              
+              </ul>
+          </nav>
+      </footer>
+    </div>
+</body>    
+
+
+
+<script type="text/javascript">
             
         function sendMessage() {
           
-        var input1 = document.getElementById('userinput');
+        var input1 = document.getElementById('name');
         var input2 = document.getElementById('userinput1');
 
         if (input1.value != ""){
@@ -29,17 +112,20 @@
             }
 
             request.send(JSON.stringify(params));
-            }
-          else {
-            alert("Name must be filled out");
-          } 
+            alert("Submission Sent Successfully")
         }
-        else {
-          alert("Name must be filled out");
-        } 
+      else {
+        alert("Both boxes must be filled out");
+      } 
+    }
+    else {
+      alert("Both boxes must be filled out");
+    } 
+
+    document.getElementById('userinput1').value = '';
 
 
       }
     </script>
-    </body>    
+
 </html>
