@@ -319,6 +319,10 @@ iframe {
   height: 200px;
 }
 
+.textalignthing {
+  text-align: center;
+}
+
 .boxthings14 {
   display: -ms-grid;
   display: grid;
@@ -392,6 +396,17 @@ iframe {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
+}
+
+.boxthings22 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 2fr;
+      grid-template-columns: 1fr 1fr 2fr;
+}
+
+.bottomline {
+  border-bottom: solid 1px black;
 }
 
 .boxthings13 {

@@ -326,6 +326,9 @@ iframe{
     box-shadow:rgba(0, 0, 0, 0.165) 11px 2px 10px 2px;
     height: 200px;
 }
+.textalignthing{
+    text-align: center;
+}
 
 
 .boxthings14{
@@ -389,7 +392,13 @@ iframe{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
-
+.boxthings22{
+    display:grid;
+    grid-template-columns: 1fr 1fr 2fr;
+}
+.bottomline{
+    border-bottom: solid 1px black;
+}
 
 .boxthings13{
         padding-top: 5%;
