@@ -387,14 +387,18 @@ iframe{
     height:100%;
     display: grid;
     grid-template-columns: 1fr 2fr;
+    //padding-right: 30%;
 }
 .boxthings21{
+    height:350px;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 .boxthings22{
     display:grid;
-    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-columns: 1fr 1fr ;
+    margin: 0;
+    margin: auto;
 }
 .bottomline{
     border-bottom: solid 1px black;
@@ -1537,9 +1541,13 @@ iframe{
 }
 
 .podium{
+    background-color: #cbcbcb;
+    box-shadow: 0px -12px 72px -14px rgba(0,0,0,0.86),inset 3px -27px 45px -31px rgba(0,0,0,0.67);
     display:block;
     margin-left: auto;
+    margin-right: auto;
     max-height:300px;
+    max-width:300px;
 }
 .podium1{
     height:25px;
@@ -1549,19 +1557,37 @@ iframe{
     height:35px;
 }
 
+.podium4{
+    display:block;
+    margin: auto;
+    max-height:300px;
+    max-width:300px;
+}
+
+
 .podium1text{
-    
+    -webkit-box-shadow: inset 45px 0px 63px -42px rgba(0,0,0,0.38),inset -45px 0px 63px -42px rgba(0,0,0,0.4);
+    -moz-box-shadow: inset 45px 0px 63px -42px rgba(0,0,0,0.38),inset -45px 0px 63px -42px rgba(0,0,0,0.4);
+    box-shadow: inset 45px 0px 63px -42px rgba(0,0,0,0.38),inset -45px 0px 63px -42px rgba(0,0,0,0.4);
+    height: 37px;
     background-color: silver;
     text-align: center;
     font-family: 'Mukta';
 }
 
 .podium2text{
+    -webkit-box-shadow: inset 45px 0px 63px -42px rgba(0,0,0,0.38),inset -45px 0px 63px -42px rgba(0,0,0,0.4);
+    -moz-box-shadow: inset 45px 0px 63px -42px rgba(0,0,0,0.38),inset -45px 0px 63px -42px rgba(0,0,0,0.4);
+    box-shadow: inset 45px 0px 63px -42px rgba(0,0,0,0.38),inset -45px 0px 63px -42px rgba(0,0,0,0.4);
+    height: 62px;
     background-color: goldenrod;
     text-align: center;
     font-family: 'Mukta';
 }
 .podium3text{
+    -webkit-box-shadow: inset 45px 0px 63px -42px rgba(0,0,0,0.38),inset -45px 0px 63px -42px rgba(0,0,0,0.4);
+    -moz-box-shadow: inset 45px 0px 63px -42px rgba(0,0,0,0.38),inset -45px 0px 63px -42px rgba(0,0,0,0.4);
+    box-shadow: inset 45px 0px 63px -42px rgba(0,0,0,0.38),inset -45px 0px 63px -42px rgba(0,0,0,0.4);
     background-color: rgb(107, 51, 29);
     text-align: center;
     font-family: 'Mukta';

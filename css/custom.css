@@ -392,6 +392,7 @@ iframe {
 }
 
 .boxthings21 {
+  height: 350px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
@@ -401,8 +402,10 @@ iframe {
 .boxthings22 {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 2fr;
-      grid-template-columns: 1fr 1fr 2fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  margin: 0;
+  margin: auto;
 }
 
 .bottomline {
@@ -1659,9 +1662,14 @@ iframe {
 }
 
 .podium {
+  background-color: #cbcbcb;
+  -webkit-box-shadow: 0px -12px 72px -14px rgba(0, 0, 0, 0.86), inset 3px -27px 45px -31px rgba(0, 0, 0, 0.67);
+          box-shadow: 0px -12px 72px -14px rgba(0, 0, 0, 0.86), inset 3px -27px 45px -31px rgba(0, 0, 0, 0.67);
   display: block;
   margin-left: auto;
+  margin-right: auto;
   max-height: 300px;
+  max-width: 300px;
 }
 
 .podium1 {
@@ -1672,19 +1680,34 @@ iframe {
   height: 35px;
 }
 
+.podium4 {
+  display: block;
+  margin: auto;
+  max-height: 300px;
+  max-width: 300px;
+}
+
 .podium1text {
+  -webkit-box-shadow: inset 45px 0px 63px -42px rgba(0, 0, 0, 0.38), inset -45px 0px 63px -42px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 45px 0px 63px -42px rgba(0, 0, 0, 0.38), inset -45px 0px 63px -42px rgba(0, 0, 0, 0.4);
+  height: 37px;
   background-color: silver;
   text-align: center;
   font-family: 'Mukta';
 }
 
 .podium2text {
+  -webkit-box-shadow: inset 45px 0px 63px -42px rgba(0, 0, 0, 0.38), inset -45px 0px 63px -42px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 45px 0px 63px -42px rgba(0, 0, 0, 0.38), inset -45px 0px 63px -42px rgba(0, 0, 0, 0.4);
+  height: 62px;
   background-color: goldenrod;
   text-align: center;
   font-family: 'Mukta';
 }
 
 .podium3text {
+  -webkit-box-shadow: inset 45px 0px 63px -42px rgba(0, 0, 0, 0.38), inset -45px 0px 63px -42px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 45px 0px 63px -42px rgba(0, 0, 0, 0.38), inset -45px 0px 63px -42px rgba(0, 0, 0, 0.4);
   background-color: #6b331d;
   text-align: center;
   font-family: 'Mukta';
