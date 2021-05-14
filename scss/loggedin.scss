@@ -1,0 +1,45 @@
+body {
+    
+    box-shadow: inset 0 11px 11px -7px rgba(0, 0, 0, 0.55);
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #cbcbcb;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+li a {
+  display: grid;
+  color: #303030;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a.active {
+    height: 110%;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+li a:hover:not(.active) {
+  color: rgb(141, 141, 141);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: -10px;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.603);
+  z-index: 100;
+}

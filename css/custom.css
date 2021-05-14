@@ -84,6 +84,12 @@ nav ul li a.active {
   padding-top: 30px;
 }
 
+.sideheader {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.165) 11px 2px 10px 2px;
+          box-shadow: rgba(0, 0, 0, 0.165) 11px 2px 10px 2px;
+  height: auto;
+}
+
 iframe {
   border: none;
   /* width */
@@ -288,6 +294,31 @@ iframe {
   text-align: left;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  width: auto;
+  max-height: 100px;
+}
+
+.sidelogologo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  width: 170px;
+  max-height: 100px;
+  border-bottom: solid 1px #303030;
+}
+
+.void {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.165) 11px 2px 10px 2px;
+          box-shadow: rgba(0, 0, 0, 0.165) 11px 2px 10px 2px;
+  height: 200px;
+}
+
 .boxthings14 {
   display: -ms-grid;
   display: grid;
@@ -311,10 +342,60 @@ iframe {
   height: 100%;
 }
 
+.boxthings16 {
+  padding: 5%;
+  grid-gap: 5%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.boxthings17 {
+  padding-top: 5%;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr 1fr 1.57fr;
+      grid-template-rows: 1fr 1fr 1.57fr;
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 100%;
+  height: 965px;
+}
+
+.boxthings18 {
+  text-align: center;
+  color: #303030;
+}
+
+.boxthings19 {
+  height: 100px;
+  padding-top: 4%;
+}
+
+.boxthings20 {
+  padding: 5%;
+  grid-gap: 5%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+}
+
+.boxthings21 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
 .boxthings13 {
-  background-color: #dadada;
-  -webkit-box-shadow: 12px 0px 5px -4px rgba(0, 0, 0, 0.164), -12px 0 5px -4px rgba(0, 0, 0, 0.164);
-          box-shadow: 12px 0px 5px -4px rgba(0, 0, 0, 0.164), -12px 0 5px -4px rgba(0, 0, 0, 0.164);
+  padding-top: 5%;
   position: relative;
   display: -ms-grid;
   display: grid;
@@ -324,9 +405,8 @@ iframe {
       grid-template-rows: 2fr 1fr 1.57fr;
   margin: 0 auto;
   max-width: 1280px;
-  max-height: 769px;
   width: 100%;
-  height: 100%;
+  height: 965px;
 }
 
 .boxthings12 {
@@ -909,11 +989,32 @@ iframe {
 }
 
 .card-headerinv2 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#2c025c00), color-stop(74%, #4e038b77));
-  background-image: linear-gradient(180deg, #2c025c00 0%, #4e038b77 74%);
-  padding-left: 2%;
+  font-family: "Mukta", sans-serif;
   padding-right: 2%;
-  font-size: 30px;
+  font-size: 25px;
+  color: #303030;
+  border-bottom: 1px solid #303030;
+}
+
+.card-headerinv3 {
+  border-bottom: 1px solid #303030;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+}
+
+.card-headerinv4 {
+  font-family: "Mukta", sans-serif;
+  font-size: 25px;
+  color: #303030;
+}
+
+#webpagebutton {
+  max-height: 20px;
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .card-header {
@@ -947,8 +1048,6 @@ iframe {
 }
 
 .card-header9 {
-  -webkit-box-shadow: inset 0 11px 11px -7px rgba(0, 0, 0, 0.55);
-          box-shadow: inset 0 11px 11px -7px rgba(0, 0, 0, 0.55);
   max-height: 100px;
   padding-top: 5%;
   text-align: center;
@@ -963,6 +1062,15 @@ iframe {
 }
 
 .card-header10 {
+  max-height: 100px;
+  padding-top: 5%;
+  text-align: center;
+  color: #303030;
+  font-size: 70px;
+  font-family: "Robota-NonCommercial";
+}
+
+.card-header11 {
   max-height: 100px;
   padding-top: 5%;
   text-align: center;
@@ -1533,6 +1641,39 @@ iframe {
 
 .formboxthing {
   padding-top: 5%;
+}
+
+.podium {
+  display: block;
+  margin-left: auto;
+  max-height: 300px;
+}
+
+.podium1 {
+  height: 25px;
+}
+
+.podium3 {
+  height: 35px;
+}
+
+.podium1text {
+  background-color: silver;
+  text-align: center;
+  font-family: 'Mukta';
+}
+
+.podium2text {
+  background-color: goldenrod;
+  text-align: center;
+  font-family: 'Mukta';
+}
+
+.podium3text {
+  background-color: #6b331d;
+  text-align: center;
+  font-family: 'Mukta';
+  color: #cbcbcb;
 }
 
 .phototitle {

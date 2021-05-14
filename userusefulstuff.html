@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="#put meta data here for improving the SEO">
+    <title>Photos</title>
+    <link rel="shortcut icon" type="image/png" href="https://raw.githubusercontent.com/Zavvitar/TENET/master/img/logo/Icon2.png"/>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href ="css/custom.css">
+    <link rel="stylesheet" href ="css/loggedin.css">
+</head>
+
+<body>
+    <div style = "display:grid;grid-template-columns: 200px 1fr;height: auto;">
+        <div class = "sideheader" display = grid>
+            <ul>
+                <img src="img/logo/logo.png" class="sidelogologo">
+                <li><a href="userhomepage.html">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a class="active" href="userusefulstuff.html">Useful Things</a></li>
+                <li><a href="usercontest.html">Contest</a></li>
+                <li><a href ="userlogout.html">Logout</a></li>
+            </ul>
+        </div>
+
+        <div class = "boxthings16">
+            <div>
+                <img src="img/usefullstuff/DIM.png" class="center">
+                <div class ="card-headerinv3">
+                    <div class ="card-headerinv4">Destiny Item Manager (DIM)</div>
+                    <input type="button" value="Go to Website" id = "webpagebutton" onclick="DIM()"></input>
+                </div>
+                <div>This is Destiny Item Manager (DIM) it is very useful for equipping and moving items around on your characters and vault, as well as saving preset loadouts for quick access for say specific raids or things. It is available on web-browser, windows application and phone/tablet/mobile application.</div>
+                
+            </div>
+            <div>
+                <img src="img/usefullstuff/gunsmith.jpg" class="center">
+                <div class ="card-headerinv3">
+                    <div class ="card-headerinv4">D2 Gunsmith</div>
+                    <input type="button" value="Go to Website" id = "webpagebutton" onclick="D2Gunsmith()"></input>
+                </div>
+                <div>This website Is similar to light.gg but it allows you to put each different perk on and shows you exactly how they affect the stats (you can also apply mods and masterworks (with varying levels of masterwork completion), you can also save what the roll you want to get is to your DIM whishlist from this website too, I would recommend this website for anyone who is wanting to see what rolls they think would work for them opposed to just seeing what the possible rolls are and what the "community" rolls are.
+                </div>
+            </div>
+            <div>
+                <img src="img/usefullstuff/lightgg.png" class="center">
+                <div class ="card-headerinv3">
+                    <div class ="card-headerinv4">Light.gg</div>
+                    <input type="button" value="Go to Website" id = "webpagebutton" onclick="LightGG()"></input>
+                </div>
+                <div>This is light.gg. The website is useful as it shows every roll for every possible weapon in the game, as well as showing the weeks trials rewards and map, as well as XUR's weekly items (as well as Iron banner when that is out) and also shows what are new weapons and armour from new seasons and DLC's.
+                </div>
+            </div>
+            <div>
+                <img src="img/usefullstuff/ishtar.png" class="center">
+                <div class ="card-headerinv3">
+                    <div class ="card-headerinv4">Ishtar Commander</div>
+                    <input type="button" value="Go to Website" id = "webpagebutton" onclick="IshtarCommander()"></input>
+                </div>
+                <div>This is Ishtar Commander it's basically the same as DIM. However, it also tracks quests which makes it useful for tracking the progress of quests that only show percentages in-game, as Ishtar can show it in a non-percentage form (such as 1/100 kills). Ishtar Commander is available as an application on Windows (from the windows store) for Mac, and also for mobile on IOS and GooglePlay.
+                </div>
+            </div>
+            <div>
+                <div class = "boxthings19">
+                    <img src="img/usefullstuff/lowlidev.png" class="center">
+                </div>
+                <div class ="card-headerinv3">
+                    <div class ="card-headerinv4">Lowlidev</div>
+                    <input type="button" value="Go to Website" id = "webpagebutton" onclick="Lowlidev()"></input>
+                </div>
+                <div>This website is good for keeping track of anything in the world before beyond light (doesn't have Europa on it). It's a pretty good visual representation of where things are and how many so I would recommend it for example if looking to find corrupted eggs.
+                </div>
+            </div>
+            <div>
+                <img src="img/usefullstuff/destinysets.svg" class="center">
+                <div class ="card-headerinv3">
+                    <div class ="card-headerinv4">Destiny Sets</div>
+                    <input type="button" value="Go to Website" id = "webpagebutton" onclick="DestinySets()"></input>
+                </div>
+                <div>This website is basically a database of all destiny items throughout the years/seasons. So is useful sometimes if you want to find a specific piece of gear from a while ago or that's just come out or anything.
+                </div>
+            </div>
+            <div>
+                <img src="img/usefullstuff/destinysolo.ico" class="center">
+                <div class ="card-headerinv3">
+                    <div class ="card-headerinv4">Destiny 2 solo enabler</div>
+                    <input type="button" value="Go to Website" id = "webpagebutton" onclick="SoloEnabler()"></input>
+                </div>
+                <div>This link is for Github download for a program that allows you to load into activities solo, the program should be running when in orbit and enabled there, then simply disabled when you want to do activities with other people. While Bungie has said they will not outrightly ban people for using this they said that there is no definitive answer for if they will in the future, so do use at your own risk (though as of yet no one has been banned for using it).
+                </div>
+            </div>
+            <div>
+                <img src="img/usefullstuff/heatmap.png" class="center">
+                <div class ="card-headerinv3">
+                    <div class ="card-headerinv4">Destiny 2 Historical Heatmap</div>
+                    <input type="button" value="Go to Website" id = "webpagebutton" onclick="Heatmap()"></input>
+                </div>
+                <div>This website gives you a heatmap breakdown of how much you have played Destiny 2 each day since launch, it's interesting to see. (Also works for D1).                   
+                </div>
+            </div>
+            <div>
+                <img src="img/usefullstuff/wastedondestiny.png" class="center">
+                <div class ="card-headerinv3">
+                    <div class ="card-headerinv4">Time Wasted on Destiny</div>
+                    <input type="button" value="Go to Website" id = "webpagebutton" onclick="TimeWasted()"></input>
+                </div>
+                <div>Similar to the "Destiny 2 Historical Heatmap" this website shows how much time per character you have played in Destiny, as well as how much time you have spent on characters that have been deleted.                
+                </div>
+            </div>
+            <div>
+                <img src="img/usefullstuff/reportlogo.png" class="center">
+                <div class ="card-headerinv3">
+                    <div class ="card-headerinv4">Trials Report</div>
+                    <input type="button" value="Go to Website" id = "webpagebutton" onclick="TrialsReport()"></input>
+                </div>
+                <div>This is a useful website for checking your own trials stats on a match by match basis, as well as seeing your past stats. Its also useful for checking the opposing team's stats if you want to.   
+                </div>
+            </div>
+            <div>
+                <img src="img/usefullstuff/reportlogo.png" class="center">
+                <div class ="card-headerinv3">
+                    <div class ="card-headerinv4">Crucible Report</div>
+                    <input type="button" value="Go to Website" id = "webpagebutton" onclick="CrucibleReport()"></input>
+                </div>
+                <div>This is a useful website for checking your own PVP / Crucible stats on a match by match basis, as well as seeing your past stats. Its also useful for checking the opposing team's stats if you want to.   
+                </div>
+            </div>
+            <div>
+                <img src="img/usefullstuff/reportlogo.png" class="center">
+                <div class ="card-headerinv3">
+                    <div class ="card-headerinv4">Guardian Report</div>
+                    <input type="button" value="Go to Website" id = "webpagebutton" onclick="GuardianReport()"></input>
+                </div>
+                <div>This is a useful website for checking your own PVE stats. Its also useful for checking the rest of your fireteams stats too.   
+                </div>
+            </div>
+        </div>
+        <div class = "void"></div>
+    </div>
+
+</body>
+
+<script type="text/javascript">
+            
+    function DIM() {
+      window.open("https://app.destinyitemmanager.com/login", "_blank");
+  }
+  function D2Gunsmith() {
+      window.open("https://d2gunsmith.com/w/2633186522?s=0,0,0,0,0,0", "_blank");
+  }
+  function LightGG() {
+      window.open("https://www.light.gg/", "_blank");
+  }
+  function IshtarCommander() {
+      window.open("https://ishtar.app/", "_blank");
+  }
+  function Lowlidev() {
+      window.open("https://lowlidev.com.au/destiny/maps/dreaming-city", "_blank");
+  }
+  function DestinySets() {
+      window.open("https://destinysets.com/", "_blank");
+  }
+  function SoloEnabler() {
+      window.open("https://github.com/DrNoLife/Destiny-2-Solo-Enabler/releases/tag/2.3", "_blank");
+  }
+  function Heatmap() {
+      window.open("https://chrisfried.github.io/secret-scrublandeux/", "_blank");
+  }
+  function TimeWasted() {
+      window.open("https://wastedondestiny.com/", "_blank");
+  }
+  function TrialsReport() {
+      window.open("https://destinytrialsreport.com/", "_blank");
+  }
+  function CrucibleReport() {
+      window.open("https://crucible.report", "_blank");
+  }
+  function GuardianReport() {
+      window.open("https://guardian.report", "_blank");
+  }
+
+
+
+
+
+
+
+  </script>
+  </html>

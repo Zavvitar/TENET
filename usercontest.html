@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="#put meta data here for improving the SEO">
+    <title>Photos</title>
+    <link rel="shortcut icon" type="image/png" href="https://raw.githubusercontent.com/Zavvitar/TENET/master/img/logo/Icon2.png"/>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href ="css/custom.css">
+    <link rel="stylesheet" href ="css/loggedin.css">
+</head>
+
+
+<body>
+    <div style = "display:grid;grid-template-columns: 200px 1fr;height: auto;">
+        <div class = "sideheader" display = grid>
+            <ul>
+                <img src="img/logo/logo.png" class="sidelogologo">
+                <li><a href="userhomepage.html">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="userusefulstuff.html">Useful Things</a></li>
+                <li><a class="active" href="usercontest.html">Contest</a></li>
+                <li><a href ="userlogout.html">Logout</a></li>
+            </ul>
+        </div>
+
+        <div class = 'boxthings13' display = grid>
+
+            <div class = "card-header9">CONTEST</div>
+               
+            <div class = 'boxthings14' display = grid>
+              <div></div>
+              <div class= "formboxthing">
+                <p class = "minititle">Select Name:</p>
+                <form>
+                  <select id = "name" name = "dropdown">
+                     <option value = "James">James</option>
+                     <option value = "B3T3R">B3T3R</option>
+                     <option value = "Froyo">Froyo</option>
+                  </select>
+                </form>
+                <p class = "minititle">Answer:</p>
+                    
+                <textarea placeholder ="Put answer here" id="userinput1" autocomplete="off"></textarea>
+                <br>
+                <input type="submit" onclick="sendMessage()"></input>
+              </div>
+            </div>
+          </div>
+    </div>
+
+</body>
+
+
+
+<script type="text/javascript">
+            
+    function sendMessage() {
+      
+    var input1 = document.getElementById('name');
+    var input2 = document.getElementById('userinput1');
+
+    if (input1.value != ""){
+      if (input2.value != ""){
+        var request = new XMLHttpRequest();
+        request.open("POST","https://discord.com/api/webhooks/832738471101202443/0S6EmEa-ml49-FWkkE2ATRyCY_k4XzzCIkQGMp2JUf6GFHNAwGxxGcZY5ii8HBjPmQzn");
+
+        request.setRequestHeader('Content-type', 'application/json');
+
+
+          
+        var params = {
+          username: "Website Form Submission",
+          avatar_url: "",
+          content:("__**Discord Name:**__\n" +input1.value +"\n__**Description:**__\n"+ input2.value),
+        }
+
+        request.send(JSON.stringify(params));
+        alert("Submission Sent Successfully")
+    }
+  else {
+    alert("Both boxes must be filled out");
+  } 
+}
+else {
+  alert("Both boxes must be filled out");
+} 
+
+document.getElementById('userinput1').value = '';
+
+  }
+</script>
+
+
+
+
+</html>

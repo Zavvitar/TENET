@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="#put meta data here for improving the SEO">
+    <title>Photos</title>
+    <link rel="shortcut icon" type="image/png" href="https://raw.githubusercontent.com/Zavvitar/TENET/master/img/logo/Icon2.png"/>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href ="css/custom.css">
+    <link rel="stylesheet" href ="css/loggedin.css">
+</head>
+
+
+<body>
+    <div style = "display:grid;grid-template-columns: 200px 1fr;">
+        <div class = "sideheader" display = grid>
+            <ul>
+                <img src="img/logo/logo.png" class="sidelogologo">
+                <li><a href="userhomepage.html">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="userusefulstuff.html">Useful Things</a></li>
+                <li><a href="usercontest.html">Contest</a></li>
+                <li><a class="active" href ="userlogout.html">Logout</a></li>
+            </ul>
+        </div>
+
+        <div class = 'boxthings17' display = grid>
+
+            <div class = "card-header9">LOGOUT</div>
+               
+            <div class = 'boxthings14' display = grid>
+              <div></div>
+              <div class= "formboxthing">
+                <div class = "boxthings18">Are you sure you want to log out?</div>
+                <input type="submit" id = "logout" onclick="sendMessage()"></input>
+              </div>
+            </div>
+          </div>
+    </div>
+
+</body>
+
+
+<script type="text/javascript">
+            
+  function sendMessage() {
+    window.location.href = "index.html";
+}
+</script>
+
+</html>
