@@ -188,6 +188,7 @@ iframe{
     max-height: 100px;
     color:black;
     font-size: 30px;
+    grid-gap: 5px;
 }
 
 
@@ -452,14 +453,15 @@ iframe{
     //z-index: -100;
     //padding-top: 20px;
     //padding-bottom: 5px;
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    //grid-template-columns: 1fr;
     //grid-template-rows: 1fr 1fr;
     margin: 0 auto;
     max-width: 1280px;
     max-height: 1000px;
     width: 100%;
-    height: 100%;
+    height: 1000px;
     //grid-gap: 5px;
     background-color:#dadada;
 }
@@ -477,7 +479,7 @@ iframe{
     grid-template-rows: 1fr 1fr;
     margin: 0 auto;
     max-width: 1400px;
-    max-height: 1000px;
+    //max-height: 1000px;
     width: 100%;
     height: 100%;
     //grid-gap: 5px;
@@ -499,8 +501,8 @@ iframe{
 
 .boxthings8{
     box-shadow: inset 0 11px 11px -7px rgba(0, 0, 0, 0.55);
-    height: 500px;
-    max-height:500px;
+    //height: 500px;
+   // max-height:500px;
     //box-shadow: 6px 0 10px -4px rgba(0,0,0,0.53), -6px 0 10px -4px rgba(0,0,0,0.53);
    // box-shadow: 0 9px 0px 0px rgb(203, 203, 203), 0 -9px 0px 0px rgb(203, 203, 203), 12px 0 15px -4px rgba(0,0,0,0.53), -12px 0 15px -4px rgba(0,0,0,0.53);
 //    box-shadow: $shadow;
@@ -509,7 +511,7 @@ iframe{
     grid-template-columns: 1fr 2fr;
 }
 .boxthings9{
-    max-height:500px;
+    //max-height:500px;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     color:black;
@@ -984,6 +986,7 @@ iframe{
     font-family: "Robota-NonCommercial";
 }
 .card-header2{
+    padding-left: 5%;
     padding-right: 15%;
     text-align: center;
     color: #303030;
@@ -1804,9 +1807,14 @@ textarea:focus {
 
 
 @media only screen and (max-width: 780px){
+    .twittercontainer{
+        margin:auto;
+        width: 400px;
+    }
     iframe{
+
         max-width: 400px;
-        max-height: 225px;
+        max-height: 350px;
     }
     .boxthings7{
         grid: none;
@@ -1839,14 +1847,15 @@ textarea:focus {
         display: none;
     }
     .memberspadding{
-        height: 500px;
+        padding-bottom: 0;
+        height: 400px;
     }
     .boxthings12{
         grid-template-rows: 0.5fr 0.6fr;
     }
-    .formboxthing{
-        height: 10px;
-    }
+    //.formboxthing{
+        //height: 10px;
+    //}
     .card-header2{
         padding-top: 0;
         padding-bottom: 3px;
@@ -1868,6 +1877,7 @@ textarea:focus {
     }
 
     .boxthings90{
+        grid-gap: 10px;
         height: auto;
         display:grid;
         max-height: none;
@@ -1875,7 +1885,8 @@ textarea:focus {
         grid-template-columns: 1fr;
     }
     .boxthings8{
-        height: 400px;
+        display: grid;
+        height: 350px;
         max-height: none;
         grid-template-columns: none;
         grid-template-rows: auto;
@@ -1884,17 +1895,19 @@ textarea:focus {
     
         font-size: 15px;
     }
-    .onlinemembers{
+    //.onlinemembers{
 
-        font-size: 15px;
-    }
+       // font-size: 15px;
+    //}
     .card-header{
-        height: 70px;
+        height: 0px;
         padding-top: 5%;
         padding-bottom: 0;
         font-size: 30px;
     }
     .card-header2{
+        padding-bottom: 0;
+        padding-left: 0;
         font-size: 30px;
     }
     .card-header4{
@@ -1916,6 +1929,7 @@ textarea:focus {
         padding-right: 5%;
         padding-left: 5%;
         font-size: 15px;
+        padding-bottom: 0;
     }
     .banner{
         max-width: 600px;
