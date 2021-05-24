@@ -52,15 +52,19 @@
         <div></div>
         <div></div>
         <div class = 'boxthings14' display = grid>
-        <div></div>
-        <div class= "formboxthing">
-            <p class = "minititle">Username:</p>
-            <input type="text" required placeholder ="Username" id="userinput" autocomplete="off">
-            <p class = "minititle">Password:</p>
-              
-            <input type="text" required placeholder ="Password:" id="userinput2" autocomplete="off">
-            <br>
-            <input type="submit" onclick="sendMessage()"></input>
+            <div></div>
+            <div class= "formboxthing">
+                <p class = "minititle">Username:</p>
+                <input type="text" required placeholder ="Username" id="userinput" autocomplete="off">
+                <p class = "minititle">Password:</p>
+                
+                <input type="password" required placeholder ="Password:" id="userinput2" autocomplete="off">
+                <br>
+                <p>👁
+                <input type="checkbox" onclick="myFunction()">
+                <br>
+            
+                <input type="submit" onclick="sendMessage()"></input>
         </div>
       </div>
     </div>
@@ -76,20 +80,31 @@
         var input1 = document.getElementById('userinput');
         var input2 = document.getElementById('userinput2');
 
-        if (input1.value != ""){
-          if (input2.value != ""){
-            window.location.href = "userhomepage.html";
+        if (input1.value != "Clan"){
+            if (input2.value != "Member"){
+                window.location.href = "userhomepage.html";
+            }
+            else {
+                alert("Both boxes must be filled out");
+            } 
         }
-      else {
-        alert("Both boxes must be filled out");
-      } 
+        else {
+            alert("Both boxes must be filled out");
+        } 
+
+
+        }
+
+
+        function myFunction() {
+        var x = document.getElementById("userinput2");
+        if (x.type === "password") {
+            x.type = "text";
+        } 
+        else {
+            x.type = "password";
+        }
     }
-    else {
-      alert("Both boxes must be filled out");
-    } 
-
-
-      }
     </script>
 
 </html>

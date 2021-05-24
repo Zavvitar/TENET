@@ -340,7 +340,7 @@ iframe{
     position: relative;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.5fr 1fr;
     margin: 0 auto;
     max-width: 1280px;
     max-height: 769px;
@@ -1810,6 +1810,9 @@ iframe{
   }
 
 input[type = text]{
+    width: 200px;
+}
+input[type = password]{
     width: 200px;
 }
 
