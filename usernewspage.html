@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="#put meta data here for improving the SEO">
-    <title>Homepage</title>
+    <title>News</title>
     <link rel="shortcut icon" type="image/png" href="https://raw.githubusercontent.com/Zavvitar/TENET/master/img/logo/Icon2.png"/>
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -20,8 +20,8 @@
         <div class = "sideheader" display = grid>
             <ul>
                 <img src="img/logo/logo.png" class="sidelogologo">
-                <li><a class="active" href="userhomepage.html">Home</a></li>
-                <li><a href="usernewspage.html">News</a></li>
+                <li><a href="userhomepage.html">Home</a></li>
+                <li><a class="active" href="usernewspage.html">News</a></li>
                 <li><a href="userusefulstuff.html">Useful Things</a></li>
                 <li><a href="usercontest.html">Contest</a></li>
                 <li><a href ="userlogout.html">Logout</a></li>
@@ -31,41 +31,20 @@
         <div class = "boxthings20">
             <h1></h1>
             <div>
-                <p style = "font-family: 'Robota-NonCommercial'; border-bottom: solid 1px #303030;font-size: 50px;">PREVIOUS EVENTS</p>
+                <p style = "font-family: 'Robota-NonCommercial'; border-bottom: solid 1px #303030;font-size: 50px;">DAILY VENDORS</p>
                 <br>
                 <p style = "font-family: 'Mukta';font-size: 30px;text-decoration: underline">Scavenger hunt:</p>
                 <p>The winners from the End of Season scavenger hunt are: Prophet in 1st place, James in 2nd place, and LOKJAV in 3rd place.</p>
                 <br>
                 <br>
-                <div class = "boxthings21">
-                    <div>
-                        <div class = "podium1"></div>
-                        <img src="img/Members/Jamespodium.png" class ="podium">
-                        <p class = "podium1text">2nd Place</p>
-                    </div>
-                    <div>   
-                        <div class = "podium2"></div>
-                        <img src="img/Members/LOKJAVpodium.png" class ="podium">
-                        <p class = "podium2text">1st Place</p>
-                    </div>
-                    <div>   
-                        <div class = "podium3"></div>
-                        <img src="img/Members/Insanitypodium.png" class ="podium">
-                        <p class = "podium3text">3rd Place</p>
-                    </div>
-                </div>
+                
                 <br>
                 <!--div class= "bottomline"></div-->
                 <br>
-                <p style = "font-family: 'Mukta';font-size: 30px;text-decoration: underline;">Fashion Contest:</p>
-                <p>Empi won the Fashion contest with her winning outfit (right image).</p>
-                <div class= "boxthings22">
-                    <img src="img/Members/Emma.png" class ="podium4">
-                    <div>
-                    <img src="img/Members/emmapodium.png" class ="podium4">
-                    <p class= "textalignthing">Empis Winning Loadout</p>
-                    </div>
-                </div>
+                <p style = "font-family: 'Robota-NonCommercial'; border-bottom: solid 1px #303030;font-size: 50px;">WEEKLY VENDORS</p>
+                <br>
+                <p style = "font-family: 'Mukta';font-size: 30px;text-decoration: underline">Scavenger hunt:</p>
+                <p>The winners from the End of Season scavenger hunt are: Prophet in 1st place, James in 2nd place, and LOKJAV in 3rd place.</p>
                 
                 
             </div>  
@@ -77,3 +56,21 @@
 
 </body>
 </html>
+
+<script>
+    var apiKey = "e8d0222df3cb471f977514949034dfa4";
+
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "https://www.bungie.net/platform/Destiny/Manifest/InventoryItem/1274330687/", true);
+    xhr.setRequestHeader("X-API-Key", apiKey);
+
+    xhr.onreadystatechange = function(){
+    if(this.readyState === 4 && this.status === 200){
+    var json = JSON.parse(this.responseText);
+    console.log(json.Response.data.inventoryItem.itemName); //Gjallarhorn
+    }
+    }
+
+    xhr.send();
+</script>
+
