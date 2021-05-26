@@ -1828,7 +1828,15 @@ textarea:focus {
   }
 
 
-
+@media only screen and (max-width: 1060px){
+    .twittercontainer{
+        margin:auto;
+        width: 625px;
+    }
+    .boxthings7{
+        grid: none;
+    }
+}
 
 
 @media only screen and (max-width: 780px){
@@ -1841,9 +1849,7 @@ textarea:focus {
         max-width: 400px;
         max-height: 350px;
     }
-    .boxthings7{
-        grid: none;
-    }
+    
 
     .landingwords{
         font-size: 30px;

@@ -49,4 +49,8 @@ body::before {
 .TID::-webkit-scrollbar {
   display: none;
 }
+
+.mods:navbar {
+  display: none;
+}
 /*# sourceMappingURL=loggedin.css.map */
