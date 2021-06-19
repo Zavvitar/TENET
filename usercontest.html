@@ -81,9 +81,9 @@
 
           
         var params = {
-          username: "Website Form Submission",
+          username: "Contest",
           avatar_url: "",
-          content:("__**Discord Name:**__\n" +input1.value +"\n__**Description:**__\n"+ input2.value),
+          content:("__**" +input1.value +"**__: "+ input2.value),
         }
 
         request.send(JSON.stringify(params));
