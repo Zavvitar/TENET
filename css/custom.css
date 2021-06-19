@@ -405,10 +405,18 @@ iframe {
 .boxthings22 {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
   margin: 0;
   margin: auto;
+}
+
+.boxthings23 {
+  height: 350px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
 }
 
 .bottomline {
@@ -1717,6 +1725,14 @@ iframe {
   margin: auto;
   max-height: 300px;
   max-width: 300px;
+}
+
+.podium5 {
+  padding-top: 10px;
+  display: block;
+  margin: auto;
+  max-height: 300px;
+  max-width: 350px;
 }
 
 .podium1text {

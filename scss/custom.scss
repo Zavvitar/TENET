@@ -394,9 +394,15 @@ iframe{
 }
 .boxthings22{
     display:grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: auto auto ;
     margin: 0;
     margin: auto;
+}
+
+.boxthings23{
+    height:350px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
 }
 .bottomline{
     border-bottom: solid 1px black;
@@ -1588,6 +1594,14 @@ iframe{
     margin: auto;
     max-height:300px;
     max-width:300px;
+}
+
+.podium5{
+    padding-top: 10px;
+    display:block;
+    margin: auto;
+    max-height:300px;
+    max-width:350px;
 }
 
 
